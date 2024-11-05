@@ -4,7 +4,7 @@ from typing import Any, Dict, Type, TYPE_CHECKING, Union
 import pydantic
 
 
-class GenerateJsonSchemaSafe(pydantic.json_schema.GenerateJsonSchema):
+class GenerateJsonSchemaSafe():
     """
     Subclass pydantic's GenerateJsonSchema to catch pydantic schemas that will not
     translate properly to json schemas used for generation.
